@@ -1,6 +1,23 @@
 Orion Example Blog
 ==================
 
+## Demo of Opps issue
+Please see [issue #162 orionjs/orion Pages Opps message flashing up](https://github.com/orionjs/orion/issues/162) for more information.
+
+When meteor routes to any create pages url a brief "Oops" message flashes up. This may be reproduced as follows:
+  
+1. create an admin account
+2. in the Admin panel go to "Pages"
+3. create a contact page as follows
+
+        title: "Contact"
+        url: "contact"
+        Contents: "This is the contact page!"  
+4. go to the [Home page](http://localhost:3000)
+5. click on [Contact](http://localhost:3000/contact) in the silly menu
+6. as the page loads you should see the *"Oops"* message flash up!
+
+
 ``` v2.0 ```
 
 http://orion-example.meteor.com
